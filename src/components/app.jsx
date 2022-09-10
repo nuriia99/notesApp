@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import Header from './header.jsx';
-import Card from "./card.jsx";
+import Card from "./Card.jsx";
 import Footer from "./footer.jsx";
 import AddCard from "./AddCard.jsx";
 
@@ -8,7 +8,7 @@ import AddCard from "./AddCard.jsx";
 // const cards2 = [
 //     {
 //         title: "Work",
-//         content: "Finish this app."
+//         content: "Finish this app.Finish this app.Finish this app.Finish this app.Finish this app.Finish this app.Finish this app.Finish this app.Finish this app.Finish this app.Finish this app.Finish this app.Finish this app.Finish this app.Finish this app.Finish this app.Finish this app.Finish this app.Finish this app.Finish this app.Finish this app.Finish this app.Finish this app.Finish this app.Finish this app.Finish this app.Finish this app.Finish this app.Finish this app.Finish this app.Finish this app.Finish this app.Finish this app.Finish this app.Finish this app.Finish this app.Finish this app.Finish this app.Finish this app.Finish this app.Finish this app.Finish this app.Finish this app.Finish this app.Finish this app.Finish this app."
 //     },
 //     {
 //         title: "English",
@@ -27,14 +27,22 @@ function App(){
              return [...prev, card]
             });
     }
+    function deleteCard(id){
+        setCards((prev)=>{
+            return prev.filter((card, index)=>{
+                return index !== id
+            })
+        });
+        
+    }
 
     
 
     return <div>
         <Header />
         <AddCard addItem={addItem}/>
-        {cards.map( card => {
-            return <Card title={card.title} content={card.content} />
+        {cards.map( (card, index) => {
+            return <Card deleteCard={deleteCard} key={index} id={index} title={card.title} content={card.content} />
         })}
         
         

@@ -1,5 +1,11 @@
+html {
+    min-height: 100%;
+    position: relative;
+  }
 body{
     background-color: rgb(244, 244, 244);
+    margin: 0;
+  margin-bottom: 40px;
 }
 
 
@@ -8,7 +14,9 @@ body{
     padding: 0.9375rem; /* 1 rem son 16 px*/
 }
 
+
 .float{
+
     position: absolute;
     right: 1.125rem;
     bottom: -1.125rem;
@@ -23,8 +31,25 @@ body{
 }
 
 .plus{
-    margin:0.5rem 0.5625rem;
+    margin:0.4375rem 0.2188rem;
     font-size: 1.3125rem;
+}
+
+.delete{
+    font-size: 0.9375rem;
+    color: #0C9;
+}
+
+.btn-delete{
+    position: absolute;
+    float: left;
+    right: 0.25rem;
+    top: 0.25rem;
+    font-size: 0.9375rem;
+    outline:none;
+    border: none;
+    background: #FFF;
+    
 }
 
 .float:hover{
@@ -42,10 +67,11 @@ body{
 
 .card{
     background-color: #FFF;
-    max-width: 18.75rem;
+    max-width: 300px;
     min-width: 12.5rem;
     height: fit-content;
     margin: 3.125rem;
+    padding-right: 30px;
     float: left;
 }
 
@@ -67,9 +93,10 @@ body{
 
 
 .footer{
+    
     position: absolute;
-    text-align: center;
     bottom: 0;
+    text-align: center;
     width: 100%;
     height: 2.5rem;
     color: #ccc;
