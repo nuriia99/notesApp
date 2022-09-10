@@ -1,12 +1,13 @@
 import React from "react";
 
-function floatButton(){
+function FloatButton(props){
     return <div>
-        <a href="/" class="float">
-            <i class="fa-solid fa-plus plus"></i>
-        </a>
+        <button onClick={props.add} className="float">
+          <i class="fa-solid fa-plus plus"></i>
+        </button>
+ 
         
     </div>
 }
 
-export default floatButton;
+export default FloatButton;

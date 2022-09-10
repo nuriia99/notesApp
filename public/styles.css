@@ -18,10 +18,12 @@ body{
     width: 2.25rem;
     height: 2.25rem;
     box-shadow: 0 0.0625rem 0.1875rem rgba(0, 0, 0, 0.3);
+    outline:none;
+    border: none;
 }
 
 .plus{
-    margin:0.5rem 0.625rem;
+    margin:0.5rem 0.5625rem;
     font-size: 1.3125rem;
 }
 
@@ -34,11 +36,17 @@ body{
     place-items: center;
 }
 
+.div-cards{
+    display: flex;
+}
+
 .card{
     background-color: #FFF;
     max-width: 18.75rem;
+    min-width: 12.5rem;
     height: fit-content;
     margin: 3.125rem;
+    float: left;
 }
 
 .card.addCard{
