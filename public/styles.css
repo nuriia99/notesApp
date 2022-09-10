@@ -9,25 +9,29 @@ body{
 }
 
 .float{
-    position:fixed;
-	width:60px;
-	height:60px;
-	bottom:40px;
-	right:40px;
-	background-color:#0C9;
-	color:#FFF;
-	border-radius:50px;
-	text-align:center;
-	box-shadow: 2px 2px 3px #999;
+    position: absolute;
+    right: 1.125rem;
+    bottom: -1.125rem;
+    background: #0C9;
+    color: #fff;
+    border-radius: 50%;
+    width: 2.25rem;
+    height: 2.25rem;
+    box-shadow: 0 0.0625rem 0.1875rem rgba(0, 0, 0, 0.3);
 }
 
 .plus{
-    margin:1.125rem;
-    font-size: 1.5625rem;
+    margin:0.5rem 0.625rem;
+    font-size: 1.3125rem;
 }
 
 .float:hover{
     color: black;
+}
+
+.center{
+    display: grid;
+    place-items: center;
 }
 
 .card{
@@ -36,6 +40,23 @@ body{
     height: fit-content;
     margin: 3.125rem;
 }
+
+.card.addCard{
+    background-color: #FFF;
+    width: 31.25rem;
+    max-width: none;
+    height: fit-content;
+    margin: 3.125rem;
+}
+
+.add{
+    width: 85%;
+    margin: 0.625rem;
+}
+.content{
+    padding-bottom: 1.25rem;
+}
+
 
 .footer{
     position: absolute;
